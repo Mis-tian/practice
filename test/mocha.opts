@@ -1,0 +1,10 @@
+
+test
+--recursive
+--watch
+--bail 
+--babel-polyfill
+--require babel-register
+--compilers js:babel-core/register
+-t 5000 test/add.test.js
+./node_modules/mocha/bin/mocha --compilers js:babel-core/register
